@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <!-- 
+      * adsasd
+      ! asdasd
+      ? asdasd
+      todo asdasd
+      //asdasd
+     -->
+  </div>
+  <script>
+    let poketmon = ["pikkachu", "laichi", "pairi", "ggobugi", "butterful", "yadoran", " lizamong", "zammanbo"];
+    let root = document.getElementById("root");
+    let a = 0;
+    // 배열의 값은 모르겠지만 알아서 반복 시키게끔
+    // 동적으로 태그를 생성하였다.
+    for(let i = 0; i < poketmon.length; i++) {
+      let li = document.createElement("li");
+      li.textContent = poketmon[i];
+      root.appendChild(li);
+    }
+
+  </script>
+</body>
+</html>
